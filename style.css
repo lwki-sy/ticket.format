@@ -1,4 +1,74 @@
 *{
-    background-color: black;
-    color:greenyellow;
+    background-color: rgb(0, 0, 0);
+    color:yellowgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2{
+    font-size: 18px;
+}
+.lightbg{
+    background-color: aliceblue;
+}
+.darktext{
+    color:black
+}
+
+.main-left{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    width:fit-content;
+
+    gap:5px; 
+    outline:1px solid darkgreen;
+    border-radius: 5px;
+    padding:15px;
+    margin:5px;
+    
+}
+
+label {
+    display: inline-block;
+    width: 150px;        /* Adjust so 'Date of Purchase:' fits */
+    text-align: right;    /* Keeps labels right-aligned against the input boxes */
+    margin-right: 8px;   /* Space between label and input */
+    vertical-align: top;  /* Keeps textarea labels aligned at the top */
+  }
+
+
+#purchasedate{
+    max-width: fit-content;
+}
+
+#purchasedateText{
+    max-width: fit-content;
+
+}
+
+
+#call-reason{
+    min-width: 300px;
+    height: 100px;
+    resize:vertical;
+}
+#call-resolution{
+    min-width: 300px;
+    height: 20px;
+    resize:vertical;
+}
+
+.info{
+    margin-bottom: 8px; /* Adds clean spacing between each row */
+}
+
+
+
+/*remove arrow up and down on input tags*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
