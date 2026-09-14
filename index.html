@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ticket!</h1>
+   
+<div class="main">
     <div class="main-left">
         <div><h2>Call information:</h2></div>
         <div class="info"><label for="name">Customer's Name:</label> <input type="text" class="lightbg darktext" id="name"></div>
@@ -22,14 +23,20 @@
         <div class="info"><label for="call-resolution">Resolution:</label> <textarea class="lightbg darktext" id="call-resolution"></textarea></div>
     
         <div class="buttons">
-            <div><button class="button" id="btn-general-">General</button></div>
-            <div><button class="button" id="btn-equipment">Equipment</button></div>
+            <div><button onclick="generateGeneral()" class="button" id="btn-general">General</button></div>
+            <div><button onclick="generateEquipment()"  class="button" id="btn-equipment">Equipment</button></div>
         </div>
     </div>
 
+    <div class="main-right">
+        <h3></h3>
+        <textarea id="output"></textarea>
+        <button onclick="copyTicket()">Copy to Clipboard</button>
+    </div>
+</div>    
 
 
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
