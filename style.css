@@ -38,6 +38,9 @@ label {
     vertical-align: top;  /* Keeps textarea labels aligned at the top */
   }
 
+  input{
+    min-height: 18px;
+  }
 
 #purchasedate{
     max-width: fit-content;
@@ -63,6 +66,22 @@ label {
 .info{
     margin-bottom: 8px; /* Adds clean spacing between each row */
 }
+
+
+.buttons{
+    display:flex;
+    flex-direction: row;
+}
+.button{
+    display:flex;
+    flex-direction: row;
+
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
 
 
 
