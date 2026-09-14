@@ -103,3 +103,26 @@ Was OOW disclosure read? N/A
 
   document.getElementById("output").value = template;
 }
+
+
+//copy clipboard
+function copyTicket() {
+  // 1. Get the textarea element and its text content
+  const outputArea = document.getElementById("output");
+  const textToCopy = outputArea.value;
+
+  // 2. Check if there is text to copy
+  if (!textToCopy) {
+    alert("Nothing to copy yet!");
+    return;
+  }
+
+  // 3. Write text to clipboard
+  navigator.clipboard.writeText(textToCopy)
+    .then(() => {
+      alert("Copied to clipboard!");
+    })
+    .catch((err) => {
+      console.error("Failed to copy: ", err);
+    });
+}
