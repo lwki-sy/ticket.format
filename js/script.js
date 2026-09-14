@@ -117,6 +117,10 @@ function copyTicket() {
     return;
   }
 
+
+
+
+/* Copy notif
   // 3. Write text to clipboard
   navigator.clipboard.writeText(textToCopy)
     .then(() => {
@@ -126,3 +130,4 @@ function copyTicket() {
       console.error("Failed to copy: ", err);
     });
 }
+    */
