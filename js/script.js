@@ -110,19 +110,23 @@ Was OOW disclosure read? N/A
 }
 
 
-//copy clipboard
+// Copy to clipboard
 function copyTicket() {
   // 1. Get the textarea element and its text content
   const outputArea = document.getElementById("output");
   const textToCopy = outputArea.value;
 
-  // 2. Check if there is text to copy
- /* if (!textToCopy) {
-    alert("Nothing to copy yet!");
-    return;
-  }*/
+  // 2. Write the text to clipboard
+  if (textToCopy) {
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      alert("Copied to clipboard!");
+    }).catch(err => {
+      console.error("Failed to copy: ", err);
+    });
+  } else {
+    alert("Nothing to copy!");
+  }
 }
-
 
 /* Copy notif
   // 3. Write text to clipboard
