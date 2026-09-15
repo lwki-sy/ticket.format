@@ -116,8 +116,7 @@ function copyTicket() {
     alert("Nothing to copy yet!");
     return;
   }
-
-
+}
 
 
 /* Copy notif
@@ -130,4 +129,4 @@ function copyTicket() {
       console.error("Failed to copy: ", err);
     });
 }
-    */
+*/
