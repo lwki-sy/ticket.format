@@ -1,3 +1,5 @@
+//VibeCoded langg boiiii
+
 function formatDate(dateString) {
     if (!dateString) return ""; // Handle empty input gracefully
   
