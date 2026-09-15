@@ -19,14 +19,28 @@
         <div class="info"><label for="serialnum">Serial Number:</label> <input type="text" class="lightbg darktext" id="serialnum"></div>
         <div class="info"><label for="purchasedate">Date of Purchase:</label> <input type="date" class="lightbg darktext" id="purchasedate"> | <input type="text" class="lightbg darktext" id="purchasedateText"></div>
         <div class="info"><label for="purchaseplace">Place of Purchase:</label> <input type="text" class="lightbg darktext" id="purchaseplace"></div>
-        <div class="info"><label for="call-reason">Reason for calling:</label> <textarea class="lightbg darktext" id="call-reason"></textarea></div>
+        <div class="info align-top"><label for="call-reason">Reason for calling:</label> <textarea class="lightbg darktext" id="call-reason"></textarea></div>
         <div class="info"><label for="call-resolution">Resolution:</label> <textarea class="lightbg darktext" id="call-resolution"></textarea></div>
-    
+        
+        <hr />
+        <!--Equipment Support Section-->
+        <h2>ES Info:</h2>
+        <div class="info ec-section"><label for="PoP">PoP Requested?</label> <input type="text" class="lightbg darktext" id="PoP"></div>
+        <div class="info ec-section align-top"><label for="address">Address of Machine:</label> <textarea class="lightbg darktext" id="address"></textarea></div>
+        <div class="info ec-section"><label for="troubleshoot">Troubleshooting Done:</label> <input type="text" class="lightbg darktext" id="troubleshoot"></div>
+        <div class="info ec-section"><label for="parts">Parts recommended?</label> <input type="text" class="lightbg darktext" id="parts"></div>
+        <div class="info ec-section"><label for="issueMedia">Photo/Vid of issue:</label> <input type="text" class="lightbg darktext" id="issueMedia"></div>
+
+
+
+        <!--Button-->
         <div class="buttons">
             <div><button onclick="generateGeneral()" class="button" id="btn-general">General</button></div>
             <div><button onclick="generateEquipment()"  class="button" id="btn-equipment">Equipment</button></div>
         </div>
     </div>
+        
+        <!--Output section-->
 
     <div class="main-right">
         <h3></h3>

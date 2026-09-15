@@ -59,6 +59,11 @@ function generateEquipment() {
   const ordernum = document.getElementById("ordernum").value || "N/A";
   const equipmodel = document.getElementById("equipmodel").value || "N/A";
   const serialnum = document.getElementById("serialnum").value || "N/A";
+  const PoP = document.getElementById("PoP").value || "N/A";
+  const address = document.getElementById("address").value || "N/A";
+  const troubleshoot = document.getElementById("troubleshoot").value || "N/A";
+  const parts = document.getElementById("parts").value || "N/A";
+  const issueMedia = document.getElementById("issueMedia").value || "N/A";
 
 // Get raw values without forcing "N/A" early
 const rawDate = document.getElementById("purchasedate").value;
@@ -88,14 +93,14 @@ Machine information
 Model of equipment: ${equipmodel}
 Approximate purchase date: ${finalDateDisplay}
 Serial Number if Available: ${serialnum}
-Was proof of purchase requested if potentially in warranty? 
-address machine is located:
+Was proof of purchase requested if potentially in warranty? ${PoP}
+address machine is located: ${address}
 
 Issue reported
 Problem description: ${callreason}
-What troubleshooting has been done? 
-Any parts recommended?
-pictures or video of the issue?
+What troubleshooting has been done? ${troubleshoot}
+Any parts recommended? ${parts}
+pictures or video of the issue? ${issueMedia}
 
 Warranty Information
 Was OOW disclosure read? N/A
@@ -112,10 +117,10 @@ function copyTicket() {
   const textToCopy = outputArea.value;
 
   // 2. Check if there is text to copy
-  if (!textToCopy) {
+ /* if (!textToCopy) {
     alert("Nothing to copy yet!");
     return;
-  }
+  }*/
 }
 
 

@@ -5,7 +5,13 @@
 }
 
 h1, h2{
-    font-size: 18px;
+    font-size: 20px;
+}
+
+    h2{
+    margin-left: 18px;
+    margin-bottom: 20px;
+
 }
 .lightbg{
     background-color: aliceblue;
@@ -17,30 +23,31 @@ h1, h2{
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .main-left{
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
 
     width:fit-content;
 
-    gap:5px; 
+    gap:2px; 
     outline:1px solid darkgreen;
     border-radius: 5px;
-    padding:15px;
+    padding:10px;
     margin:5px;
+    min-width: 400px;    
     
 }
 
 .main-right{
-    gap:5px; 
+    gap:2px; 
     outline:1px solid darkgreen;
     border-radius: 5px;
-    padding:15px;
+    padding:10px;
     margin:5px;
     min-width: 400px;    
 }
@@ -57,23 +64,28 @@ label {
     min-height: 18px;
   }
 
+
+  .align-top{
+    align-items: flex-start !important;
+  }
+
 #purchasedate{
-    max-width: fit-content;
+    max-width: 80px;
 }
 
 #purchasedateText{
-    max-width: fit-content;
+    max-width: 150px;
 
 }
 
 
 #call-reason{
-    min-width: 300px;
+    min-width: 250px;
     height: 100px;
     resize:vertical;
 }
 #call-resolution{
-    min-width: 300px;
+    min-width: 250px;
     height: 20px;
     resize:vertical;
 }
@@ -84,8 +96,33 @@ label {
 }
 
 .info{
-    margin-bottom: 8px; /* Adds clean spacing between each row */
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px; 
+    gap: 2px;
+    padding:2px;
 }
+
+
+hr{
+    width: 100%;
+}
+
+.ec-section{ /* Replace with your specific CSS class for the EC section row */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap; /* Prevents text from wrapping to a second line */
+
+    
+  }
+
+  #address{
+    height: 50px;
+    width: 164px;
+    resize:vertical;
+  }
+
 
 
 .buttons{
