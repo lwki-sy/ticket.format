@@ -112,6 +112,26 @@ Was OOW disclosure read? N/A
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Copy to clipboard
 function copyTicket() {
   // 1. Get the textarea element and its text content
@@ -129,6 +149,7 @@ function copyTicket() {
     alert("Nothing to copy!");
   }
 }
+
 
 /* Copy notif
   // 3. Write text to clipboard
