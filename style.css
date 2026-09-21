@@ -132,7 +132,13 @@ hr{
 
   #address{
     height: 50px;
-    width: 164px;
+    width: 172px;
+    resize:vertical;
+  }
+
+  #otherInfo{
+    height: 50px;
+    width: 172px;
     resize:vertical;
   }
 
@@ -146,6 +152,7 @@ hr{
     display:flex;
     flex-direction: row;
 
+    color:#115211;
     border-radius: 8px;
     padding: 10px;
     margin: 10px;
