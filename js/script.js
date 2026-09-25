@@ -143,6 +143,7 @@ const finalDateDisplay = combinedDate ? `${combinedDate}` : "";
 `Customer Name: ${name}
 Customer Phone Number: ${phonenum}
 Customer Email Address: ${email}
+Equipment Model (If Necessary): ${equipmodel}
 Serial Number: ${serialnum}
 Date of Purchase: ${finalDateDisplay}
 Place of Purchase: ${purchaseplace}
@@ -154,9 +155,9 @@ Please include (If not already saved in the ticket form)
 What is the customer requesting? ${custReq}
 What is the order number? ${ordernum} 
 Any other information you think would be helpful: ${otherInfo}
- 
+
 If a return is requested:
-What would the customer like to return? ${equipmodel}
+What would the customer like to return?
 What is the reason for the return? ${reasonReturn}
 `;
 
