@@ -103,11 +103,13 @@ function generateCRMSummary() {
   const email = document.getElementById("email").value || "Not Provided";
   const serialnum = document.getElementById("serialnum").value || "N/A";
   const address = document.getElementById("address").value || "N/A";
+  const purchaseplace = document.getElementById("address").value || "N/A";
   const casenum = document.getElementById("casenum").value;
   const action = document.getElementById("action").value;
   const partnumdesc = document.getElementById("partnumdesc").value;
   const financialval = document.getElementById("financialval").value;
   const sapnum = document.getElementById("sapnum").value||"Pending";
+  const dispatchnum = document.getElementById("dispatchnum").value|| "N/A";
 
   // Get raw values without forcing "N/A" early
 const rawDate = document.getElementById("purchasedate").value;
