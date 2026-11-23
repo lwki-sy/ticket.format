@@ -10,8 +10,8 @@
    
 <div class="main">
     <div class="main-left">
-        <div><h2>Call information:</h2></div>
-        <div class="info"><label for="name">Customer's Name:</label> <input type="text" class="lightbg darktext" id="name" placeholder="Nikolai Q. Tee"></div>
+        <div><h2>Ticket information:</h2></div>
+        <div class="info"><label for="name">Customer's Name:</label> <input type="text" class="lightbg darktext" id="name" placeholder="Nikolai C."></div>
         <div class="info"><label for="phonenum">Phone Number:</label> <input type="tel" class="lightbg darktext" id="phonenum"></div>
         <div class="info"><label for="email">Email Address:</label> <input type="email" class="lightbg darktext" id="email"></div>
         <div class="info"><label for="ordernum">Order Number:</label> <input type="text" class="lightbg darktext" id="ordernum"></div>
@@ -19,32 +19,26 @@
         <div class="info"><label for="serialnum">Serial Number:</label> <input type="text" class="lightbg darktext" id="serialnum"></div>
         <div class="info"><label for="purchasedate">Date of Purchase:</label> <input type="date" class="lightbg darktext" id="purchasedate"> | <input type="text" class="lightbg darktext" id="purchasedateText"></div>
         <div class="info"><label for="purchaseplace">Place of Purchase:</label> <input type="text" class="lightbg darktext" id="purchaseplace"></div>
-        <div class="info align-top"><label for="call-reason">Reason for calling:</label> <textarea class="lightbg darktext" id="call-reason" placeholder="Caela’s killer kale and kickin' kiwi shake made Kevin’s kid kick a crackling campfire."></textarea></div>
+        <div class="info align-top"><label for="call-reason">Reason for calling:</label> <textarea class="lightbg darktext" id="call-reason"></textarea></div>
         <div class="info"><label for="call-resolution">Resolution:</label> <textarea class="lightbg darktext" id="call-resolution"></textarea></div>
-        
-        <hr />
-        <!--Equipment Support Section-->
-        <h2>ES Info:</h2>
         <div class="info ec-section"><label for="PoP">PoP Requested?</label> <input type="text" class="lightbg darktext" id="PoP"></div>
-        <div class="info ec-section align-top"><label for="address">Address of Machine:</label> <textarea class="lightbg darktext" id="address"></textarea></div>
-        <div class="info ec-section"><label for="troubleshoot">Troubleshooting Done:</label> <input type="text" class="lightbg darktext" id="troubleshoot"></div>
-        <div class="info ec-section"><label for="parts">Parts recommended?</label> <input type="text" class="lightbg darktext" id="parts"></div>
         <div class="info ec-section"><label for="issueMedia">Photo/Vid of issue:</label> <input type="text" class="lightbg darktext" id="issueMedia"></div>        
-        
-        <hr />
-        <!--Fulfillment Support Section-->
-        <h2>FS Info:</h2>
-        <div class="info ec-section"><label for="custReq">Customer request?</label> <input type="text" class="lightbg darktext" id="custReq"></div>
-        <div class="info ec-section align-top"><label for="otherInfo">Other useful info:</label> <textarea class="lightbg darktext" id="otherInfo"></textarea></div>
-        <div class="info ec-section"><label for="reasonReturn">Reason for return:</label> <input type="text" class="lightbg darktext" id="reasonReturn"></div>
-
-
+        <div class="info ec-section align-top"><label for="address">Address of Machine:</label> <textarea class="lightbg darktext" id="address"></textarea></div>
+    <hr/>
+        <!--CRM Functions-->
+        <div class="info"><label for="ticketnum">Ticket Number:</label> <input type="text" class="lightbg darktext" id="ticketnum"></div>
+        <div class="info"><label for="casenum">Case Number:</label> <input type="text" class="lightbg darktext" id="casenum"></div>
+        <div class="info"><label for="action">Action:</label> <input type="text" class="lightbg darktext" id="action"></div>
+        <div class="info"><label for="partnumdesc">Part Number/Desc:</label> <input type="text" class="lightbg darktext" id="partnumdesc"></div>
+        <div class="info"><label for="financialval">Financial Impact $:</label> <input type="text" class="lightbg darktext" id="financialval"></div>
+        <div class="info"><label for="sapnum">SAP Number:</label> <input type="text" class="lightbg darktext" id="sapnum" placholder="Pending"></div>
+        <div class="info"><label for="dispatchnum">Dispatch Number:</label> <input type="text" class="lightbg darktext" id="dispatchnum"></div>
 
         <!--Button-->
         <div class="buttons">
-            <div><button onclick="generateGeneral()" class="button" id="btn-general">General</button></div>
-            <div><button onclick="generateEquipment()"  class="button" id="btn-equipment">Equipment</button></div>
-            <div><button onclick="generateFulfillment()"  class="button" id="btn-fulfillment">Fulfillment</button></div>
+            <div><button onclick="generate()"  class="button" id="btn-generate">Generate</button></div>
+            <div><button onclick="generateCRMChecking()" class="button" id="btn-CRMChecking">To Check</button></div>
+            <div><button onclick="generateCRMSummary()"  class="button" id="btn-CRMSummary">CRM Summary</button></div>
         </div>
     </div>
         
