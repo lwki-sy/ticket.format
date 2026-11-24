@@ -103,7 +103,7 @@ function generateCRMSummary() {
   const email = document.getElementById("email").value || "Not Provided";
   const serialnum = document.getElementById("serialnum").value || "N/A";
   const address = document.getElementById("address").value || "N/A";
-  const purchaseplace = document.getElementById("address").value || "N/A";
+  const purchaseplace = document.getElementById("purchaseplace").value || "N/A";
   const casenum = document.getElementById("casenum").value;
   const action = document.getElementById("action").value;
   const partnumdesc = document.getElementById("partnumdesc").value;
